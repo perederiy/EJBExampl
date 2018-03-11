@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0"> 
+<persistence-unit name="book_db" transaction-type="JTA">
+ <jta-data-source>java:global/jdbc/book_dbs</jta-data-source>        
+	<properties>            
+		<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/> <!-- DB Dialect -->
+        <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->      
+	</properties>  
+</persistence-unit> 
+</persistence>
